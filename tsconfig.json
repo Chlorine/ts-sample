@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "alwaysStrict": true,
+    "locale": "ru",
+    "moduleResolution": "Node",
+    "target": "esnext",
+    "declaration": true,
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
