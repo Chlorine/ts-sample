@@ -6,7 +6,7 @@ const app = express();
 app.set('port', (process.env.PORT || 3000))
 app.use('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.log(`answering... ${req.url}`);
-  res.send({ code: 420 });
+  res.send({ code: 420, currentTime: new Date().getTime() });
 });
 
 export function start() {
