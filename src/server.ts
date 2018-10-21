@@ -13,6 +13,6 @@ export function start() {
   const server = new Http.Server(app);
   server.listen(app.get('port'));
   server.on('listening', () => {
-    console.log(`listening on port ${app.get('port')}...`);
+    console.log(`Http server is listening on port ${app.get('port')}...`);
   });
 }
