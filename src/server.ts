@@ -6,7 +6,7 @@ const app = express();
 app.set('port', (process.env.PORT || 3000))
 app.use('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.log(`answering... ${req.url}`);
-  res.send({ code: 420, message: 'Bullshit-free ticketing system', currentTime: new Date().getTime() });
+  res.send({ code: 0, message: 'Success', time: new Date().getTime() });
 });
 
 export function start() {
